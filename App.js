@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import { Header, CryptoContainer } from './src/components';
 import Store from './src/Store';
 import { Provider } from 'react-redux';
@@ -8,9 +8,9 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={Store}>
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
           <RootNavigator />
-        </View>
+        </SafeAreaView>
       </Provider>
     );
   }
@@ -18,7 +18,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    marginTop: 20
+    backgroundColor: '#fff'
   }
 });

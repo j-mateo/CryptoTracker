@@ -12,7 +12,7 @@ const Header = () => {
 const styles = StyleSheet.create({
   headerContainer: {
     display: 'flex',
-    marginTop: 45,
+    paddingTop: 15,
     paddingBottom: 15,
     alignItems: 'center',
     borderBottomColor: '#EAEAEA',

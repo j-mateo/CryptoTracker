@@ -4,7 +4,7 @@ const RootNavigator = StackNavigator({
   CoinList: {
     screen: CryptoContainer,
     navigationOptions: {
-      headerTitle: 'Franck App'
+      headerTitle: 'Crypt Market Cap'
     }
   },
   CoinDetails: {
